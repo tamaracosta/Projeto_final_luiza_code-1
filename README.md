@@ -81,10 +81,45 @@ Nesta pasta, definimos os canais de comunicação da API.
 ## Swagger
 Para testar a API de forma interativa, podemos utilizar o Swagger, que é uma documentação automática. A API ![luluflix (1)](https://user-images.githubusercontent.com/73078250/195190456-941ad59c-ca69-4e47-89d6-f7060299cba7.svg) possui a seguinte documentação:
 
-![image](https://user-images.githubusercontent.com/73078250/195184146-e6ad3a4a-1299-472a-a35a-ef70cc620123.png)
+![image](https://user-images.githubusercontent.com/73078250/195345570-bb539dd8-9136-458a-8240-3703f21511be.png)
 
 ## Banco de dados
-Utilizando o MongoDB Compass, podemos visualizar o bando de dados deste projeto, que possui as seguintes coleções:
+Utilizando o MongoDB Compass, podemos visualizar o banco de dados deste projeto, que possui as seguintes coleções:
 ![mongodb](https://user-images.githubusercontent.com/73078250/195186801-d12a0243-c25d-4c97-adde-09fe30ea2198.png)
 
 ## Execução da API ![luluflix (1)](https://user-images.githubusercontent.com/73078250/195190456-941ad59c-ca69-4e47-89d6-f7060299cba7.svg)
+A API pode ser executada seguindo os passos abaixo:
+1. Clone o repositório
+
+```
+https://github.com/naomyduarteg/Projeto_final_luiza_code.git
+```
+2. Crie um ambiente virtual
+
+```
+python3 -m venv <name_of_venv>
+```
+3. Vá até a pasta onde foi criado seu ambiente virtual e ative-o
+
+No Windows:
+```
+Scripts/activate
+```
+No Linux/Mac:
+```
+bin/activate
+```
+4. Insale os módulos requeridos
+
+```
+pip install -r requirements.txt
+```
+
+6. Rode a API utilizando o uvicorn
+
+```
+uvicorn main:app --reload
+```
+
+7. Leia o QR Code abaixo para acessar a documentação
+<img src="https://user-images.githubusercontent.com/73078250/195349991-6953b178-b36b-4b23-9b9d-a202285d1e78.png" width="400" height="420" />
