@@ -84,7 +84,7 @@ Para testar a API de forma interativa, podemos utilizar o Swagger, que é uma do
 ![image](https://user-images.githubusercontent.com/73078250/195345570-bb539dd8-9136-458a-8240-3703f21511be.png)
 
 ## Banco de dados
-Utilizando o MongoDB Compass, podemos visualizar o banco de dados deste projeto, que possui as seguintes coleções:
+Para a conexão com o banco de dados, é necessário informar uma URI, conforme exemplo em .env.examples. Esta URI pode ser obtida na página do MongoDB quando clicamos em "Connect -> Connect your application". Com esta mesma URI e utilizando o MongoDB Compass, podemos visualizar o banco de dados deste projeto, que possui as seguintes coleções:
 ![mongodb](https://user-images.githubusercontent.com/73078250/195186801-d12a0243-c25d-4c97-adde-09fe30ea2198.png)
 
 ## Execução da API ![luluflix (1)](https://user-images.githubusercontent.com/73078250/195190456-941ad59c-ca69-4e47-89d6-f7060299cba7.svg)
@@ -109,7 +109,7 @@ No Linux/Mac:
 ```
 bin/activate
 ```
-4. Insale os módulos requeridos
+4. Instale os módulos requeridos
 
 ```
 pip install -r requirements.txt
@@ -121,5 +121,30 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-7. Leia o QR Code abaixo para acessar a documentação
-<img src="https://user-images.githubusercontent.com/73078250/195349991-6953b178-b36b-4b23-9b9d-a202285d1e78.png" width="400" height="420" />
+## Deploy da Aplicação
+O deploy foi realizado junto ao Heroku, onde é necessário configurar as variáveis de ambiente.
+
+Para visualizar o deploy:
+
+1) Acesse o QR Code abaixo:
+
+
+![api_LuluFlix](https://user-images.githubusercontent.com/75817559/195410406-af5daf6d-7ade-4309-9659-f52bc75492f3.png)
+
+
+
+ou
+
+
+2) Acesse o link: https://luizacodeprojetofinal.herokuapp.com/docs
+
+
+## Tecnologias/Ferramentas usadas:
+* Python
+* MongoDB
+* FastApi
+* Uvicorn
+* Swagger
+* Git/Github Projects
+* Heroku
+
