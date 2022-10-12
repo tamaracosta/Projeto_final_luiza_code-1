@@ -17,8 +17,7 @@ def get_cart_by_user_id(request: Request, user_id: str):
   return request.app.database["carts"].find_one({"user_id": user_id})
 
 def calculateTotalPrice(itemList: List[CartsItem]):
-    total = 0
-    
+    total = 0    
     for item in itemList:        
         total += item["quantity"] * item["price"]        
     return total
